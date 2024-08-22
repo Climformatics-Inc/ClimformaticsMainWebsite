@@ -26,7 +26,7 @@ function App() {
   };
 
   return (
-    <Router>
+    <Router basename="/TestClimformatics">
       <div className="App">
         <Navbar handleScrollToContact={handleScrollToContact} />
         <Routes> 
