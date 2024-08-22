@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/TestClimformatics/static/css/main.09a8042b.css",
-    "main.js": "/TestClimformatics/static/js/main.5db1d4de.js",
+    "main.js": "/TestClimformatics/static/js/main.62a8cc25.js",
     "static/js/453.bb0b8f87.chunk.js": "/TestClimformatics/static/js/453.bb0b8f87.chunk.js",
     "static/media/earthzoom.jpeg": "/TestClimformatics/static/media/earthzoom.72d4d409214d600a2ce3.jpeg",
     "static/media/arctic.jpg": "/TestClimformatics/static/media/arctic.2c0e81d1ee131cfd81bc.jpg",
@@ -36,11 +36,11 @@
     "static/media/linkedin.webp": "/TestClimformatics/static/media/linkedin.4c60124886e81a0d124d.webp",
     "index.html": "/TestClimformatics/index.html",
     "main.09a8042b.css.map": "/TestClimformatics/static/css/main.09a8042b.css.map",
-    "main.5db1d4de.js.map": "/TestClimformatics/static/js/main.5db1d4de.js.map",
+    "main.62a8cc25.js.map": "/TestClimformatics/static/js/main.62a8cc25.js.map",
     "453.bb0b8f87.chunk.js.map": "/TestClimformatics/static/js/453.bb0b8f87.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.09a8042b.css",
-    "static/js/main.5db1d4de.js"
+    "static/js/main.62a8cc25.js"
   ]
 }
