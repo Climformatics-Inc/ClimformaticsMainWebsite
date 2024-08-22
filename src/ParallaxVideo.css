@@ -1,0 +1,50 @@
+/* ParallaxVideo.css */
+.video-parallax-container {
+    margin-top: 6%;
+    position: relative;
+    height: 800px; /* Adjust this height as needed */
+    overflow: hidden;
+  }
+  
+  .parallax-video {
+    position: absolute; /* Keep the video in place while scrolling */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; /* Slightly larger to cover area during parallax movement */
+    object-fit: cover; /* Ensure the video covers the area */
+    z-index: -1; /* Ensure it's behind the content */
+  }
+  
+  .parallax-content {
+    position: absolute;
+    margin-top: -12%;
+    top: 50%;
+    z-index: 1; /* Ensure content is above the video */
+    text-align: center;
+    transform: translate(-50%, -50%);
+  }
+  
+  .parallax-text {
+    font-family: 'Newsreader', serif;
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+    padding-top: 1%;
+    padding-left: 10%;
+    padding-right: 10%;
+    
+  }
+  .App-contact-button {
+    background-color: #72A2EB;
+    align-items: center;
+    color: White;
+    margin-bottom: 55%;
+    font-family: 'Newsreader', serif;
+    padding: 10px 20px;
+    font-size: 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    
+  }

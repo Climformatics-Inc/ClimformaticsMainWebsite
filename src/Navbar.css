@@ -1,0 +1,123 @@
+.navbar {
+    background-color: #EBF4F6;
+    height: 70px;
+    position: fixed;
+    top: 0;
+    padding-top: 10px;
+    width: 100%;
+    z-index: 1000;
+    font-family: Syne;
+    box-sizing: border-box;
+    
+  }
+  
+  .navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    max-width: 100%; /* Ensure no overflow */
+    box-sizing: border-box; /* Include padding in width calculation */
+  }
+  
+  .navbar-logo img {
+    height: 40px; /* Adjust based on your logo's size and navbar height */
+    width: auto;
+  }
+  
+  .navbar-menu {
+    list-style: none;
+    display: flex;
+  }
+  
+  .navbar-item {
+    padding: 10px 24px;
+    font-size: 20px;
+    color: #071952;
+    cursor: pointer;
+  }
+  .navbar-menu .navbar-item a {
+    color: #071952;
+    text-decoration: none; 
+  }
+  
+  .navbar-item a:hover {
+    color: #088395; 
+  }
+  
+  .navbar-buttons .btn {
+    margin-left: 10px;
+    font-family: Syne;
+    padding: 10px 20px;
+    font-size: 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  .menu-icon {
+    display: none;
+}
+  
+  .login {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  .trial {
+    font-size: 20px;
+    background-color: #071952;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.5s, color 0.5s, transform 0.5s;
+    font-family: Syne;
+  }
+  
+  .trial:hover {
+    background-color: #EBF4F6;
+    color: #071952;
+    transform: scale(1.25);
+  }
+  /* Mobile view */
+@media screen and (max-width: 900px) {
+  .navbar-menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    align-items: center;
+    top: 70px;
+    width: 100%;
+    background-color: #EBF4F6;
+    transition: all 0.3s ease;
+  }
+  .navbar-container {
+    padding: 0 10px; /* Reduce padding to fit on smaller screens */
+}
+
+  .navbar-menu.active {
+    display: flex;
+  }
+
+  .navbar-item {
+    text-align: center;
+    padding: 15px 0;
+    width: 100%;
+  }
+
+  .menu-icon {
+    display: block;
+    font-size: 30px;
+  }
+
+  .navbar-buttons {
+    text-align: center;
+    padding: 15px 0;
+    width: 100%;
+  }
+
+  .navbar-item .btn {
+    width: 100%;
+  }
+}

@@ -1,0 +1,123 @@
+.Solutions {
+  background-color: white;
+}
+
+.solutions-container {
+  display: flex;
+  flex-direction: column;
+  padding: 20px; /* Adjust padding as needed */
+  margin-top: 10%;
+}
+
+.interactive-section {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.calendar-container {
+  flex: 1;
+  margin-right: 20px;
+}
+.react-calendar {
+  background-color: #ececec; /* Light grey color; adjust the shade as necessary */
+  border: 1px solid #d3d3d3; /* Optional: adds a subtle border for better definition */
+  font-family: 'Syne', sans-serif;
+  
+}
+
+
+.react-calendar__navigation button {
+  background-color: #e0e0e0; /* Lighter grey for buttons */
+  color: #333; /* Dark grey text for better readability */
+}
+
+.react-calendar__month-view__days__day {
+  color: #666; /* Adjust day text color */
+}
+
+
+
+.react-calendar__tile--active,
+.react-calendar__tile--active:enabled:hover,
+.react-calendar__tile--active:enabled:focus {
+  background-color: #2e2e2e; /* Change to your preferred color */
+  color: white; /* Optional: change text color for better contrast */
+}
+.react-calendar__tile--now {
+  background-color: #f7f7f7; /* Gold background for today */
+  color: black;
+}
+
+
+
+.temperature-timeline {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 20px;
+  font-family: 'Syne', sans-serif;
+}
+
+.hour-temp {
+  padding: 10px 0; /* Adds vertical padding for each row */
+  border-top: 1px solid #ccc; /* Thin grey line above each row */
+}
+.hour-temp .hour {
+  margin-right: 25px; /* Adds space between the time and the temperature */
+  font-weight: 300;
+}
+.hour-temp .temp {
+  font-weight: bold;
+}
+
+.model-image {
+  flex: 3;
+  width: 200%; /* Adjust based on your design */
+  height: auto;
+}
+
+.model-image img {
+  width: 100%;
+  height: auto;
+}
+
+.header-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 3%;
+  gap: 40px;
+}
+
+.header-title {
+  margin: 0; /* Removes default margin to align with the line */
+  font-family: 'Syne', sans-serif;
+  font-size: 50px;
+}
+
+.header-last-update {
+  margin: 0; /* Removes default margin */
+  font-family: 'Syne', sans-serif;
+  white-space: nowrap; /* Keeps the update text in one line */
+}
+
+.header-divider {
+  border: none;
+  height: 2px; /* Adjust thickness of the line */
+  background-color: grey; /* Grey line */
+  margin: 10px 0; /* Adjust top and bottom margin as needed */
+  margin-left: auto; /* Aligns the start of the line with the 'Models' text */
+  margin-right: auto; /* Ensures the line does not extend to the very edges of the page */
+  width: calc(100% - 40px); /* Adjusts the width to match the text alignment above, assuming the same padding as .solutions-container */
+}
+.time-selector {
+  margin-top: 10px; /* Spacing above the selector */
+}
+
+.time-selector select {
+  padding: 5px;
+  width: 100%;
+  font-family: 'Syne', sans-serif;
+}

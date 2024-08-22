@@ -1,0 +1,200 @@
+/* General Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Team Image Container */
+.team-image-container {
+  position: relative;
+  text-align: center;
+  height: 480px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.team-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  margin-top: 6%;
+}
+
+.overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  font-size: 48px;
+  color: white;
+  font-family: 'Syne', sans-serif;
+}
+
+/* Cofounder Section */
+.cofounders-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10%;
+  padding: 60px 0;
+}
+
+.cofounder-image-container {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  transition: transform 0.5s;
+}
+
+.cofounder-image-container:hover .linkedin-overlay {
+  opacity: 1;
+}
+
+.cofounder-image-container:hover {
+  transform: scale(1.05);
+}
+
+.cofounder-info {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.cofounder-name, .cofounder-position {
+  font-size: 18px;
+  color: #333;
+  font-family: 'Syne', sans-serif;
+}
+
+.cofounder-position {
+  font-style: italic;
+}
+
+.cofounder-image, .team-member-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the image covers the container without distortion */
+  object-position: center; /* Centers the image within the container */
+  border-radius: 50%; /* Ensure the image itself is circular */
+}
+/* Team Members Section */
+.team-members-container {
+  display: flex;
+  justify-content: center;
+  gap: 10%;
+  flex-wrap: wrap;
+  padding: 20px 0;
+}
+
+.team-member-image-container {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  transition: transform 0.5s;
+}
+
+.team-member-image-container:hover .linkedin-overlay {
+  opacity: 1;
+}
+
+.team-member-image-container:hover {
+  transform: scale(1.05);
+}
+
+.team-member-info {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.team-member-name, .team-member-position {
+  font-size: 16px;
+  color: #333;
+  font-family: 'Syne', sans-serif;
+}
+
+.team-member-position {
+  font-style: italic;
+}
+
+/* LinkedIn Overlay */
+.linkedin-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  border-radius: 50%;
+}
+
+.linkedin-icon {
+  width: 50%;
+  height: 50%;
+  background: url('./images/linkedin.webp') no-repeat center center;
+  background-size: contain;
+  cursor: pointer;
+}
+
+/* Founders Background */
+.founders-background {
+  background-color: #088395;
+  font-size: 20px;
+  color: white;
+  padding: 20px;
+  margin-top: 20px;
+  font-family: 'Syne', sans-serif;
+  line-height: 1.6;
+}
+
+/* Calseed Section */
+.calseed-section {
+  display: flex;
+  justify-content: center;
+  gap: 10%;
+  padding: 20px 0;
+}
+
+.calseed-section img {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+}
+
+
+
+@media screen and (max-width: 900px) {
+  .team-members-container, .cofounders-container {
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+  }
+
+  
+
+  .cofounder-name, .cofounder-position, .team-member-name, .team-member-position {
+      font-size: 12px;
+  }
+
+  .overlay-text {
+      font-size: 20px;
+  }
+
+  .founders-background {
+      font-size: 14px;
+  }
+
+  .calseed-section {
+      flex-direction: column;
+      gap: 10px;
+  }
+}

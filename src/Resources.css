@@ -1,0 +1,58 @@
+.resources-header-section {
+    background-color: #088395;
+    color: black;
+    font-size: 30px;
+    padding: 20px;
+    text-align: left;
+    margin-top: 90px;
+    font-family: 'Syne', sans-serif;
+    color: white;
+  }
+  
+  .resources-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0;
+    font-family: 'Syne', sans-serif;
+    text-align: left;
+    
+  }
+  
+  .resource-box {
+    display: block;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    text-decoration: none;
+    color: black; /* Adjust based on your color scheme */
+    transition: transform 0.3s ease;
+  }
+  
+  .resource-box:hover {
+    transform: scale(1.05); /* Increase size on hover */
+  }
+  
+  .resource-box img {
+    width: 100%;
+    height: auto; /* Adjust as needed */
+    object-fit: cover; /* Ensure the images cover the area */
+  }
+  
+  .resource-info h2 {
+    margin: 10px 0; /* Adjust as needed */
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  
+  .resource-info .date-posted {
+    font-size: smaller;
+    color: gray; /* Adjust as needed */
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  
+  .resource-info p {
+    font-size: 16px; /* Adjust as needed */
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  
