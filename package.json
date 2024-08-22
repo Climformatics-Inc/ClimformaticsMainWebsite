@@ -2,7 +2,7 @@
   "name": "climformatics",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://HarnoorDhillon.github.io/Climformatics",
+  "homepage": "https://HarnoorDhillon.github.io/TestClimformatics",
   "dependencies": {
     "@react-leaflet/core": "^2.1.0",
     "@testing-library/jest-dom": "^5.17.0",
