@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import './Navbar.css'; 
 import logo from './images/newlogo.png';
 
 const Navbar = ({ handleScrollToContact }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const location = useLocation();
+  const navigate = useNavigate();
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -16,6 +18,17 @@ const Navbar = ({ handleScrollToContact }) => {
 
   const handleLinkClick = () => {
     closeMenu(); // Close the menu after clicking a link
+  };
+
+  const handleContactClick = () => {
+    closeMenu();
+    if (location.pathname === '/') {
+      // If on the main page, just scroll to the contact section
+      handleScrollToContact();
+    } else {
+      // If not on the main page, navigate to the main page first, then scroll
+      navigate('/', { state: { scrollToContact: true } });
+    }
   };
 
   return (
@@ -34,7 +47,7 @@ const Navbar = ({ handleScrollToContact }) => {
           <li className="navbar-item"><Link to="/solutions" onClick={handleLinkClick}>Solutions</Link></li>
           <li className="navbar-item"><Link to="/resources" onClick={handleLinkClick}>Resources</Link></li>
           <li className="navbar-buttons">
-            <button className="btn trial" onClick={() => { handleScrollToContact(); closeMenu(); }}>Contact Us</button>
+            <button className="btn trial" onClick={handleContactClick}>Contact Us</button>
           </li>
         </ul>
       </div>

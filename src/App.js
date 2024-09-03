@@ -2,7 +2,7 @@ import './App.css';
 import React, { useRef } from 'react';
 import { useState, useEffect } from 'react';
 import Navbar from './Navbar';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
 import Solutions from './Solutions';
 import About from './About';
 import AnimateOnScroll from './AnimateOnScroll';
@@ -140,6 +140,13 @@ function useWindowSize() {
 
 function AppContent({ contactRef }) {
   const size = useWindowSize();
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.state?.scrollToContact) {
+      contactRef.current.scrollIntoView({ behavior: 'smooth' });
+    }
+  }, [location, contactRef]);
 
   const shouldAnimate = size.width > 900;
   return (
