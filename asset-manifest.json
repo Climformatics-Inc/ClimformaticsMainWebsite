@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/TestClimformatics/static/css/main.09a8042b.css",
-    "main.js": "/TestClimformatics/static/js/main.62a8cc25.js",
+    "main.css": "/TestClimformatics/static/css/main.10aca8a6.css",
+    "main.js": "/TestClimformatics/static/js/main.b125b4fe.js",
     "static/js/453.bb0b8f87.chunk.js": "/TestClimformatics/static/js/453.bb0b8f87.chunk.js",
     "static/media/earthzoom.jpeg": "/TestClimformatics/static/media/earthzoom.72d4d409214d600a2ce3.jpeg",
     "static/media/arctic.jpg": "/TestClimformatics/static/media/arctic.2c0e81d1ee131cfd81bc.jpg",
@@ -27,20 +27,20 @@
     "static/media/detelina.jpg": "/TestClimformatics/static/media/detelina.2544baf155dd71b27eec.jpg",
     "static/media/Nirvik.jpeg": "/TestClimformatics/static/media/Nirvik.a627b1b525655d86efd1.jpeg",
     "static/media/testimonial1.jpeg": "/TestClimformatics/static/media/testimonial1.5262faf78e84f440d5b1.jpeg",
+    "static/media/american.png": "/TestClimformatics/static/media/american.a7ba1624cebc5b21c5db.png",
     "static/media/ryan.jpg": "/TestClimformatics/static/media/ryan.a707d552f552e1a977c0.jpg",
-    "static/media/american.png": "/TestClimformatics/static/media/american.a0b0d21ed31d3418c8e5.png",
     "static/media/american-made.png": "/TestClimformatics/static/media/american-made.64348ac724f468e25105.png",
-    "static/media/calseed.png": "/TestClimformatics/static/media/calseed.24e2044ea239fb704b3f.png",
+    "static/media/calseed.png": "/TestClimformatics/static/media/calseed.0aa217ebbc1dbd3b112e.png",
     "static/media/newlogo.png": "/TestClimformatics/static/media/newlogo.da8b8604822e698f4977.png",
     "static/media/chunting zheng.jpeg": "/TestClimformatics/static/media/chunting zheng.28cc719615c1d52d8f05.jpeg",
     "static/media/linkedin.webp": "/TestClimformatics/static/media/linkedin.4c60124886e81a0d124d.webp",
     "index.html": "/TestClimformatics/index.html",
-    "main.09a8042b.css.map": "/TestClimformatics/static/css/main.09a8042b.css.map",
-    "main.62a8cc25.js.map": "/TestClimformatics/static/js/main.62a8cc25.js.map",
+    "main.10aca8a6.css.map": "/TestClimformatics/static/css/main.10aca8a6.css.map",
+    "main.b125b4fe.js.map": "/TestClimformatics/static/js/main.b125b4fe.js.map",
     "453.bb0b8f87.chunk.js.map": "/TestClimformatics/static/js/453.bb0b8f87.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.09a8042b.css",
-    "static/js/main.62a8cc25.js"
+    "static/css/main.10aca8a6.css",
+    "static/js/main.b125b4fe.js"
   ]
 }
