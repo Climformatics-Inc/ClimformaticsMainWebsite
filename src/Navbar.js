@@ -45,6 +45,7 @@ const Navbar = ({ handleScrollToContact }) => {
         <ul className={`navbar-menu ${isMenuOpen ? 'active' : ''}`}>
           <li className="navbar-item"><Link to="/about" onClick={handleLinkClick}>About</Link></li>
           <li className="navbar-item"><Link to="/solutions" onClick={handleLinkClick}>Solutions</Link></li>
+          <li className="navbar-item"><Link to="https://climformatics-demo-dashboard.web.app" onClick={handleLinkClick}>Dashboard</Link></li>
           <li className="navbar-item"><Link to="/resources" onClick={handleLinkClick}>Resources</Link></li>
           <li className="navbar-buttons">
             <button className="btn trial" onClick={handleContactClick}>Contact Us</button>
